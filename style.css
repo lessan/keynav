@@ -1,0 +1,68 @@
+﻿body
+{
+    background-color: #5c87b2;
+}
+
+body, textarea, table
+{
+	font-family: Verdana, Helvetica, Sans-Serif;
+    font-size: 12px;
+}
+
+#header
+{
+    width:960px;
+	margin-left: auto;
+	margin-right: auto;
+    position: relative;
+}
+
+#header h1
+{
+    font-size: 32px;
+    color: #fff;
+    margin: 0;
+}
+
+#main
+{
+	margin-left: auto;
+	margin-right: auto;
+    padding: 10px 30px;
+    background-color: #fff;
+    width:900px;
+}
+
+input[type="text"], textarea
+{
+    border: 1px solid #ccc;
+}
+
+
+/* table */
+table.grid
+{
+  width: 100%;
+  border: solid 1px #e8eef4;
+  border-collapse: collapse;
+}
+
+table.grid tr:hover
+{
+  background-color: #f4f4f4;
+}
+
+table.grid th
+{
+  text-align:center;
+  padding: 6px 5px;
+  background-color: #e8eef4; 
+  border: solid 1px #e8eef4;   
+}
+
+table.grid td 
+{
+  padding: 5px;   
+  border: solid 1px #e8eef4;
+}
+

@@ -1,0 +1,107 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>
+	keynav Demo
+</title>
+<link rel="stylesheet" type="text/css" href="style.css"  media="screen"/> 
+<style>
+.focused  { 	background-color: lightgreen;  }
+.homelink { text-align: center; }
+</style>
+<script src="jquery-1.4.4.min.js" ></script> 
+<script src="jquery.keynav.js" ></script> 
+<script>
+$(function() {
+	$(".keynav").keynav()
+	.bind("focus", function() {
+		$(this).find(":input,a:first").get(0).focus();
+	});
+	
+	$(".keynav:last").keynav("activate");
+});
+</script>
+</head>
+
+<body>
+
+ <div class="page">
+    <div id="header">
+        <h1>
+			keynav demo
+        </h1>
+      </div>
+    </div>
+
+    <div id="main">
+		<p class="homelink">
+			For more details about jQuery keynav, see <a href="http://google.com">http://google.com</a>
+		</p>
+	
+		<div style="width:300px;">
+
+			<table class="grid">
+				<tr>
+					<th>
+						Element
+					</th>
+					<th>
+						Description
+					</th>
+				</tr>
+
+				<tr class="keynav">
+					<td>
+						<a href="#">Link</a>
+					</td>
+					<td>
+						a href
+					</td>
+				</tr>
+
+				<tr class="keynav">
+					<td>
+						<select>
+							<option selected>Choose</option>
+							<option>Option 1</option>
+							<option>Option 2</option>
+						</select>
+					</td>
+					<td>
+						select
+					</td>
+				</tr>
+
+				<tr class="keynav">
+					<td>
+						<textarea rows="4" cols="25">Line of text
+Another line of text</textarea>
+					</td>
+					<td>
+						textarea
+					</td>
+				</tr>
+
+				<tr class="keynav">
+					<td>
+						<input type="text" />
+					</td>
+					<td>
+						textbox
+					</td>
+				</tr>
+			</table>
+			
+			<div class="keynav" style="text-align:center">
+				<button>Button</button>
+				in a div
+			</div>
+
+		</div>
+		<br />
+		<em>press the UP and DOWN arrow keys to navigate</em>
+    </div>
+</div>
+
+</body>
+</html>
