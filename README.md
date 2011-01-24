@@ -2,9 +2,10 @@
 
 ## Description:
 
-##### jQuery extension for keyboard navigation (up/down on the page)
+### jQuery extension for keyboard navigation (up/down on the page)
 
 Example uses are:
+
 * rows in a table
 * menu items
 * fieldsets in a form
